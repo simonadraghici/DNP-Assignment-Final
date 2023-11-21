@@ -1,0 +1,107 @@
+{
+  "Users": [
+    {
+      "UserName": "Dragos",
+      "Password": "Dragos1234",
+      "Status": "active"
+    },
+    {
+      "UserName": "Iulia",
+      "Password": "wefiwuhrf",
+      "Status": "active"
+    },
+    {
+      "UserName": "Mara",
+      "Password": "Mara12345",
+      "Status": "active"
+    },
+    {
+      "UserName": "IuliaIspas",
+      "Password": "Iulia12345",
+      "Status": "active"
+    }
+  ],
+  "Posts": [
+    {
+      "Id": 1,
+      "Title": "Hello",
+      "Body": "wejyfgwref",
+      "Owner": {
+        "UserName": "Dragos",
+        "Password": "Dragos1234",
+        "Status": "active"
+      }
+    },
+    {
+      "Id": 2,
+      "Title": "Vacay to Spain",
+      "Body": "efwrfuwrg",
+      "Owner": {
+        "UserName": "Iulia",
+        "Password": "wefiwuhrf",
+        "Status": "active"
+      }
+    },
+    {
+      "Id": 3,
+      "Title": "Vacay to Spain",
+      "Body": "efwrfuwrg",
+      "Owner": {
+        "UserName": "Iulia",
+        "Password": "wefiwuhrf",
+        "Status": "active"
+      }
+    },
+    {
+      "Id": 4,
+      "Title": "Some free days in Italy",
+      "Body": "Best vacation ever!",
+      "Owner": {
+        "UserName": "Mara",
+        "Password": "Mara12345",
+        "Status": "active"
+      }
+    },
+    {
+      "Id": 5,
+      "Title": "The worst nightmare",
+      "Body": "It was awful",
+      "Owner": {
+        "UserName": "Mara",
+        "Password": "Mara12345",
+        "Status": "active"
+      }
+    },
+    {
+      "Id": 6,
+      "Title": "Just for fun",
+      "Body": "Yeeee",
+      "Owner": {
+        "UserName": "Mara",
+        "Password": "Mara12345",
+        "Status": "active"
+      }
+    },
+    {
+      "Id": 7,
+      "Title": "Halloween party",
+      "Body": "Can\u0027t wait",
+      "Owner": {
+        "UserName": "Mara",
+        "Password": "Mara12345",
+        "Status": "active"
+      }
+    },
+    {
+      "Id": 8,
+      "Title": "Vacation to Copenhagen",
+      "Body": "Yeee it was really cool",
+      "Owner": {
+        "UserName": "IuliaIspas",
+        "Password": "Iulia12345",
+        "Status": "active"
+      }
+    }
+  ],
+  "Comments": []
+}

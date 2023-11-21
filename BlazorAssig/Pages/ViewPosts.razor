@@ -1,0 +1,60 @@
+@page "/ViewPosts"
+@attribute [Authorize]
+@using HttpClients.ClientInterfaces
+@using Domain.Models
+@inject IPostService PostService
+@inject NavigationManager navMgr
+<h3>All Posts</h3>
+
+<div>
+    <button @onclick="LoadPosts">Load</button>
+</div>
+
+@if (posts == null)
+{
+}
+else if (!posts.Any())
+{
+    <p>No Todos to display</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Title</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in posts)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td><button @onclick="@(() => navMgr.NavigateTo($"/ViewPost/{item.Id}"))">Open</button></td>
+            </tr>
+            
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<Post>? posts;
+    private string msg = "";
+    private string? titleContainsFilter;
+
+    private async Task LoadPosts()
+    {
+        try
+        {
+            bool? completedFilterValue = null;
+            posts = await PostService.GetPosts(titleContainsFilter);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+    
+}
